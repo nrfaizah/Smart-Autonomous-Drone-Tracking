@@ -1,38 +1,36 @@
-# Smart Autonomous Drone for Face Tracking and Body Following
+# Smart Autonomous Drone for Face Tracking and Person Following
 
-This project develops a **smart autonomous drone system** capable of detecting and tracking a person using face and body tracking.
-
-The drone uses computer vision to identify the target and automatically adjusts its movement to follow the person.
+This project develops a **smart autonomous tracking system using the DJI Tello drone**. It uses computer vision and **YOLOv3** to detect and track a person, allowing the drone to automatically follow the target.
 
 ## Features
 
-- Real-time face detection and tracking
-- Autonomous face following
-- Body/person following
-- Automatic drone movement control
-- Computer vision-based navigation
-
+- Real-time person detection using YOLOv3
+- Face tracking
+- Person/body following
+- Autonomous drone movement
+- Live camera streaming
+- Video recording
 
 ## How It Works
 
-**Camera → Face/Body Detection → Target Tracking → Movement Decision → Drone Control**
+**DJI Tello Camera → YOLOv3 Detection → Target Tracking → Movement Control → Drone Following**
 
-The drone camera continuously captures video frames. The system detects the target and determines its position within the camera frame.
+The DJI Tello camera captures live video. YOLOv3 detects the person and determines the target's position in the camera frame.
 
-Based on the target position, movement commands are sent to the drone to keep the person within the desired tracking area.
+A threshold-based control method is used to adjust the drone's movement and keep the target within the desired area of the camera view.
 
 ## Technologies
 
 - Python
-- Computer Vision
 - OpenCV
-- Face Detection
-- Human Tracking
-- Autonomous Drone Control
+- YOLOv3
+- Computer Vision
+- DJI Tello
+- DJITelloPy
 
 ## Objective
 
-The objective of this project is to develop a vision-based autonomous drone capable of tracking and following a person using real-time face and body detection.
+To develop a vision-based autonomous DJI Tello drone capable of detecting, tracking, and following a person using computer vision.
 
 ## Author
 
